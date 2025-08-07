@@ -48,7 +48,10 @@ Make sure to create a `.env` file in the root directory of the project with the 
 ```
 TOGETHER_API_KEY=your_api_key_here  
 ```
-
+Use this temporary key for access: 
+```
+TOGETHER_API_KEY="cc3dd14a8f692f680b762bb1837dd2b8097b75b512282e283ca57f6313f51e9d"  
+```
 Do not share your API key publicly. The application uses it to access the Together AI endpoints.
 
 ---
