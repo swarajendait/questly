@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Questly
 
-Currently, two official plugins are available:
+**Questly** is a desktop application designed to provide users with AI-generated, category-based daily challenges to help them develop and refine skills in a structured and goal-oriented manner. It uses Electron for the desktop interface and Together AI for generating meaningful content.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Daily AI-generated challenges based on selected categories  
+- Clean and minimal Electron-based interface  
+- Uses Together AI (via API) for challenge generation  
+- Environment-based API key setup for secure usage  
+- Open-source and developer-friendly
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Installation
+
+1. Clone the repository:
+```
+git clone https://github.com/swarajendait/questly.git  
+cd questly  
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies:
+```
+npm install  
+```
+
+3. Create a `.env` file in the root directory:
+```  
+TOGETHER_API_KEY=your_api_key_here  
+```  
+> You can obtain a free API key by signing up at [https://platform.together.xyz](https://platform.together.xyz)
+
+4. Start the application:
+```  
+npm run dev  
+```
+
+---
+
+## Environment Configuration
+
+Make sure to create a `.env` file in the root directory of the project with the following structure:
+
+```
+TOGETHER_API_KEY=your_api_key_here  
+```
+
+Do not share your API key publicly. The application uses it to access the Together AI endpoints.
+
+---
+
+## Usage
+
+- Launch the app  
+- Choose a category or generate one using AI  
+- Receive daily challenges and track progress  
+
+---
+
+## Disclaimer
+
+This project uses a rate-limited, read-only API. Please avoid abusing the key to prevent throttling. Each user should use their own API key for uninterrupted experience.
+
+---
+
+## Contributing
+
+If you'd like to contribute, feel free to fork the repo and submit a pull request. All improvements are welcome.
