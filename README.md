@@ -44,8 +44,8 @@ npm run dev
 ## Usage
 
 - Launch the app  
-- Choose a category or generate one using AI  
-- Receive daily challenges and track progress  
+- Generate a Category based on your interests using AI.
+- Choose a Quest and complete it and receive an AI generated feedback for your response.   
 
 ---
 
