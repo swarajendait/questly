@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+out/
+.build/
+.cache/
+.vite/
+
+# Local env files
+.env
+.env.*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE/editor configs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Electron build outputs
+*.exe
+*.dmg
+*.app
+*.deb
+*.snap
+*.rpm
+*.msi
+
+# Test
+coverage/
